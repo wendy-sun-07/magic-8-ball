@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "Magic 8 Ball",
+    "version": "0.0.1",
+    "description": "for an indecisive wento.",
+    "icons": {
+        "16": "8-ball.png"
+    },
+    "browser_action": {
+        "default_title": "for an indecisive bean!",
+        "default_popup": "src/views/popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["src/js/in-content.js"]
+        }
+    ],
+    "background": {
+        "scripts": ["src/js/background.js"],
+        "persistent": false
+    },
+    "content_security_policy":
+        "script-src 'self' 'unsafe-eval'; object-src 'self'; img-src * data: 'self' 'unsafe-eval'",
+    "offline_enabled": true,
+    "permissions": ["tabs", "<all_urls>", "activeTab"]
+}
