@@ -1,7 +1,7 @@
 # magic-8-ball
 For all the indecisive humans out there
 
-![Demo](Nov-26-2019 11-39-01.gif)
+![Nov-26-2019 11-39-01.gif]
 
 ## How to add it to chrome
 0). Clone the repo / download as zip \
